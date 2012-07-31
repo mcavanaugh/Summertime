@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summertime</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+<h1>Summertime</h1>
+</div>
+
+<div id="topNav">
+    <div class="wrapper">
+      <%= link_to 'Home', root_path %> |
+      <%= link_to 'All Symbols', symbol_infos_path %> |
+      Preferences |
+    </div>
+</div>
+
+<div id="content">
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>

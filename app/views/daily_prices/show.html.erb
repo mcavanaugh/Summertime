@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Opening:</b>
+  <%= @daily_price.opening %>
+</p>
+
+<p>
+  <b>High:</b>
+  <%= @daily_price.high %>
+</p>
+
+<p>
+  <b>Low:</b>
+  <%= @daily_price.low %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @daily_price.volume %>
+</p>
+
+<p>
+  <b>Closing:</b>
+  <%= @daily_price.closing %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @daily_price.symbol %>
+</p>
+
+
+<%= link_to 'Edit', edit_daily_price_path(@daily_price) %> |
+<%= link_to 'Back', daily_prices_path %>

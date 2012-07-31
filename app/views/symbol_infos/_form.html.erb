@@ -1,0 +1,29 @@
+<%= form_for(@symbol_info) do |f| %>
+  <% if @symbol_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@symbol_info.errors.count, "error") %> prohibited this symbol_info from being saved:</h2>
+
+      <ul>
+      <% @symbol_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :symbol %><br />
+    <%= f.text_field :symbol %>
+  </div>
+  <div class="field">
+    <%= f.label :company_name %><br />
+    <%= f.text_field :company_name %>
+  </div>
+  <div class="field">
+    <%= f.label :exchange %><br />
+    <%= f.text_field :exchange %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @level.symbol %>
+</p>
+
+<p>
+  <b>Active date:</b>
+  <%= @level.active_date %>
+</p>
+
+<p>
+  <b>Top:</b>
+  <%= @level.top %>
+</p>
+
+<p>
+  <b>Base:</b>
+  <%= @level.base %>
+</p>
+
+<p>
+  <b>Level1:</b>
+  <%= @level.level1 %>
+</p>
+
+<p>
+  <b>Level2:</b>
+  <%= @level.level2 %>
+</p>
+
+<p>
+  <b>Level3:</b>
+  <%= @level.level3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_level_path(@level) %> |
+<%= link_to 'Back', levels_path %>

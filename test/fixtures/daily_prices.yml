@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  opening: 9.99
+  high: 9.99
+  low: 9.99
+  volume: 1
+  closing: 9.99
+  symbol: MyString
+
+two:
+  opening: 9.99
+  high: 9.99
+  low: 9.99
+  volume: 1
+  closing: 9.99
+  symbol: MyString

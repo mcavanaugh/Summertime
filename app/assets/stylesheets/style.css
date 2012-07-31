@@ -1,0 +1,50 @@
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #999999;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 87.5%;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+a, a:link, a:visited {
+    color: #EE3F3F;
+    text-decoration: underline;
+}
+
+div#header {
+    /*background: none repeat scroll 0 0 #FFFFFF;*/
+    background: url("/assets/websterpier.jpg") no-repeat scroll 0 0 #222222;
+    width: 900px;
+    height: 296px;
+}
+
+#header h1 {
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+    color: #333333;
+}
+
+div#topNav {
+    background: none repeat scroll 0 0 #222222;
+    padding: 1em 0;
+}
+div#topNav .wrapper {
+    text-align: left;
+    margin-left: 40px;
+}
+
+div#content {
+    /*margin: 40px auto 0;*/
+    margin-left: 40px;
+    text-align: left;
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 0.5em 0 1.5em;
+    width: 700px;
+    color: #333333;
+}
+
+div#content a {
+    color: #980905;
+}

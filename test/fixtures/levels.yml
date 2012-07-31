@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  symbol: MyString
+  active_date: 2012-07-11 22:43:26
+  top: 9.99
+  base: 9.99
+  level1: MyString
+  level2: MyString
+  level3: MyString
+
+two:
+  symbol: MyString
+  active_date: 2012-07-11 22:43:26
+  top: 9.99
+  base: 9.99
+  level1: MyString
+  level2: MyString
+  level3: MyString

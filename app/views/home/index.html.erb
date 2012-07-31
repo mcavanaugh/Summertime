@@ -1,0 +1,15 @@
+<h2>Stocks to Watch Today</h2>
+
+<table>
+  <tr>
+    <th>Active date</th>
+    <th>Symbol</th>
+  </tr>
+
+<% @current_symbols.each do |current_symbol| %>
+  <tr>
+    <td><%= current_symbol.symbol_info_id %></td>
+    <td><%= link_to current_symbol.symbol, current_symbol.symbol_info%></td>
+  </tr>
+<% end %>
+</table>

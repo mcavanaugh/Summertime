@@ -1,0 +1,25 @@
+<%= form_for(@current_symbol) do |f| %>
+  <% if @current_symbol.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@current_symbol.errors.count, "error") %> prohibited this current_symbol from being saved:</h2>
+
+      <ul>
+      <% @current_symbol.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :active_date %><br />
+    <%= f.datetime_select :active_date %>
+  </div>
+  <div class="field">
+    <%= f.label :symbol %><br />
+    <%= f.text_field :symbol %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

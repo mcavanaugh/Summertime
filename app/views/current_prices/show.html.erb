@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Price:</b>
+  <%= @current_price.price %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @current_price.symbol %>
+</p>
+
+
+<%= link_to 'Edit', edit_current_price_path(@current_price) %> |
+<%= link_to 'Back', current_prices_path %>

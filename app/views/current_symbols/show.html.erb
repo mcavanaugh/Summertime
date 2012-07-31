@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Active date:</b>
+  <%= @current_symbol.active_date %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @current_symbol.symbol %>
+</p>
+
+
+<%= link_to 'Edit', edit_current_symbol_path(@current_symbol) %> |
+<%= link_to 'Back', current_symbols_path %>

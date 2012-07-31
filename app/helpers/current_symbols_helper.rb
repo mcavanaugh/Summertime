@@ -1,0 +1,2 @@
+module CurrentSymbolsHelper
+end

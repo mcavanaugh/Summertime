@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  symbol: MyString
+  company_name: MyString
+  exchange: MyString
+
+two:
+  symbol: MyString
+  company_name: MyString
+  exchange: MyString

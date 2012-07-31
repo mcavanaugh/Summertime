@@ -1,0 +1,25 @@
+<h1>Listing current_prices</h1>
+
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Symbol</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @current_prices.each do |current_price| %>
+  <tr>
+    <td><%= current_price.price %></td>
+    <td><%= current_price.symbol %></td>
+    <td><%= link_to 'Show', current_price %></td>
+    <td><%= link_to 'Edit', edit_current_price_path(current_price) %></td>
+    <td><%= link_to 'Destroy', current_price, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Current price', new_current_price_path %>

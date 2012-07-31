@@ -1,0 +1,41 @@
+<%= form_for(@daily_price) do |f| %>
+  <% if @daily_price.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@daily_price.errors.count, "error") %> prohibited this daily_price from being saved:</h2>
+
+      <ul>
+      <% @daily_price.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :opening %><br />
+    <%= f.text_field :opening %>
+  </div>
+  <div class="field">
+    <%= f.label :high %><br />
+    <%= f.text_field :high %>
+  </div>
+  <div class="field">
+    <%= f.label :low %><br />
+    <%= f.text_field :low %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br />
+    <%= f.number_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :closing %><br />
+    <%= f.text_field :closing %>
+  </div>
+  <div class="field">
+    <%= f.label :symbol %><br />
+    <%= f.text_field :symbol %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
