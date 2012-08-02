@@ -29,7 +29,7 @@
 <tbody>
 <% @symbol_info.daily_prices.each do |daily_price| %>
   <tr>
-    <td><%= daily_price.created_at %></td>
+    <td><%= daily_price.created_at.strftime("%d %b %Y") %></td>
     <td><%= daily_price.opening %></td>
     <td><%= daily_price.high %></td>
     <td><%= daily_price.closing %></td>

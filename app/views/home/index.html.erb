@@ -8,7 +8,7 @@
 
 <% @current_symbols.each do |current_symbol| %>
   <tr>
-    <td><%= current_symbol.symbol_info_id %></td>
+    <td><%= current_symbol.created_at.strftime("%d %b %Y") %></td>
     <td><%= link_to current_symbol.symbol, current_symbol.symbol_info%></td>
   </tr>
 <% end %>
