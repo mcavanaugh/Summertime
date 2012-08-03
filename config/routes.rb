@@ -6,8 +6,9 @@ Summertime::Application.routes.draw do
   resources :current_prices
 
   resources :symbol_infos do
-    resources :daily_prices
+  resources :daily_prices
   end
+
 
   get "home/index"
 
