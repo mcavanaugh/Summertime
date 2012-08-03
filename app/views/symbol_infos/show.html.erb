@@ -29,7 +29,7 @@ $(document).ready(function() {
             name: '<%= @symbol_info.symbol %>',
             data: 
 [
-<% @symbol_info.daily_prices.each do |daily_price| %>
+<% @symbol_info.daily_prices.order('created_at ASC').each do |daily_price| %>
   [
     <%= daily_price.created_at.to_i * 1000 %>,
     <%= daily_price.closing %>,
