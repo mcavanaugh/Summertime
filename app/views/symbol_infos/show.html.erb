@@ -15,6 +15,8 @@
   <%= @symbol_info.exchange %>
 </p>
 
+<% if !@symbol_info.daily_prices.empty? %>
+
 <%= javascript_tag  do -%>
     var chart1; // globally available
 $(document).ready(function() {
@@ -86,6 +88,12 @@ $(document).ready(function() {
 <% end %>
 </tbody>
 </table>
+
+<% else %>
+
+<h2>No price data available</h2>
+
+<% end %>
 
 
 <%= link_to 'Edit', edit_symbol_info_path(@symbol_info) %> |
