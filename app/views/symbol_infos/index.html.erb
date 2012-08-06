@@ -5,19 +5,13 @@
     <th>Symbol</th>
     <th>Company name</th>
     <th>Exchange</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @symbol_infos.each do |symbol_info| %>
   <tr>
-    <td><%= symbol_info.symbol %></td>
+    <td><%= link_to symbol_info.symbol, symbol_info %></td>
     <td><%= symbol_info.company_name %></td>
     <td><%= symbol_info.exchange %></td>
-    <td><%= link_to 'Show', symbol_info %></td>
-    <td><%= link_to 'Edit', edit_symbol_info_path(symbol_info) %></td>
-    <td><%= link_to 'Destroy', symbol_info, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
