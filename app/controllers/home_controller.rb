@@ -7,4 +7,13 @@ class HomeController < ApplicationController
       format.json { render :json => @current_symbols }
     end
   end
+
+  def about
+  end
+
+  def contact
+  end
+
+  def help
+  end
 end

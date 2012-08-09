@@ -11,6 +11,9 @@ Summertime::Application.routes.draw do
 
 
   get "home/index"
+  match 'about' => 'home#about', :via => :get
+  match 'contact' => 'home#contact', :via => :get
+  match 'help' => 'home#help', :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
