@@ -12,6 +12,10 @@ a, a:link, a:visited {
     text-decoration: underline;
 }
 
+a:hover {
+    background-color: none;
+}
+
 div#page {
     margin: 0 auto 0.75em;
     position: relative;
