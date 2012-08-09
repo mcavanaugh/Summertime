@@ -22,9 +22,7 @@ div#page {
     width: 950px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.23);
 }
-div#page a:hover {
-    background-color: #FFFFFF;
-}
+
 div#header {
     /*background: none repeat scroll 0 0 #FFFFFF;*/
     background: url("/assets/websterpier.jpg") no-repeat scroll 0 0 #222222;
