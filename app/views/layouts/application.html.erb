@@ -8,27 +8,15 @@
 </head>
 <body>
 <div id="page">
-<div id="header">
-<h1>Summertime</h1>
-</div>
-
-<div id="topNav">
-    <div class="wrapper">
-      <%= link_to 'Home', root_path %> |
-      <%= link_to 'All Symbols', symbol_infos_path %> |
-      Preferences |
-      <%= link_to 'Contact', '/contact'%> |
-      <%= link_to 'About', '/about'%> |
-      <%= link_to 'Help', '/help'%> |
-    </div>
-</div>
-
+<%= render 'layouts/header' %>
 <div id="content">
 
 <%= yield %>
 
 </div>
 
+<footer>
+</footer>
 </div>
 </body>
 </html>
