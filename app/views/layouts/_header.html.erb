@@ -6,12 +6,13 @@
 <nav>
 <div id="topNav">
     <div class="wrapper">
-      <%= link_to 'Home', root_path %> |
-      <%= link_to 'All Symbols', symbol_infos_path %> |
-      Preferences |
-      <%= link_to 'Contact', contact_path %> |
-      <%= link_to 'About', about_path %> |
-      <%= link_to 'Help', help_path %> |
+	<%= tabs_tag do |tab| %>
+	  <%= tab.home      'Home', root_path %>
+	  <%= tab.symbols 'All Symbols', symbol_infos_path %>
+	  <%= tab.contact   'Contact', contact_path %>
+	  <%= tab.about   'About', about_path %>
+	  <%= tab.help   'Help', help_path, :style => "border-style: none" %>
+	<% end %>
     </div>
 </div>
 </nav>

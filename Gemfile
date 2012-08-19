@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 gem 'bootstrap-sass', '2.0.0'
+gem 'tabs_on_rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.10.0'

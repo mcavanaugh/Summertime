@@ -40,6 +40,25 @@ div#topNav {
 div#topNav .wrapper {
     text-align: left;
     margin-left: 40px;
+    overflow: auto;
+}
+
+div#topNav  ul {
+    margin: 0;
+    list-style: none;
+}
+
+div#topNav li {
+    float: left;
+    margin-right: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+div#topNav li.current {
+    /* background-color: #0064B9; */
 }
 
 div#content {

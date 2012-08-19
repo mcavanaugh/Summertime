@@ -3,6 +3,7 @@ class SymbolInfosController < ApplicationController
   # GET /symbol_infos.json
   def index
     @symbol_infos = SymbolInfo.all
+    set_tab :symbols
 
     respond_to do |format|
       format.html # index.html.erb
